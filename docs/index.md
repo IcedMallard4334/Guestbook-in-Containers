@@ -31,4 +31,5 @@ The provided `automark.sh` reports **28/28 required checks** and **8/8 good-prac
 - [Architecture](architecture.md): the containers, network, volume and startup sequence.
 - [Decisions](decisions.md): the choices made, the alternatives and the trade-offs.
 - [Running and testing](running.md): how to run, verify and clean up the stack.
+- [Docker concepts](docker-concepts.md): short answers on Docker and Compose fundamentals.
 - [AI declaration](ai-declaration.md): which AI tools were used and for what.
