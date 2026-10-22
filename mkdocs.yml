@@ -1,0 +1,27 @@
+site_name: Guestbook Containerisation (COMS3011A Lab 2)
+site_description: Architecture and design decisions for the containerised SvelteKit + PostgreSQL guestbook.
+site_author: Victor Hyginus (2849537)
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Decisions: decisions.md
+  - Running and testing: running.md
+  - AI declaration: ai-declaration.md

@@ -1,0 +1,37 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: production
+      # Credentials live here (not in the image). "db" resolves via the compose network.
+      DATABASE_URL: postgres://guestbook:guestbook_pw@db:5432/guestbook
+    ports:
+      - "3000:3000"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: guestbook
+      POSTGRES_PASSWORD: guestbook_pw
+      POSTGRES_DB: guestbook
+    volumes:
+      # Named volume => data survives `docker compose down` (only `down -v` removes it).
+      # postgres 17 keeps its data under /var/lib/postgresql/data.
+      - guestbook_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U guestbook -d guestbook"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    restart: unless-stopped
+    # No `ports:` on purpose: only the app needs to reach the database.
+
+volumes:
+  guestbook_data:
