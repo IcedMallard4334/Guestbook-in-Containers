@@ -2,7 +2,7 @@
 
 **Student:** Victor Hyginus (2849537) · COMS3011A Lab 2
 
-📖 **Live documentation:** https://icedmallard4334.github.io/Guestbook-in-Containers_Lab-3_2849537/
+**Live documentation:** https://icedmallard4334.github.io/Guestbook-in-Containers_Lab-3_2849537/
 
 ## Containerisation solution
 
