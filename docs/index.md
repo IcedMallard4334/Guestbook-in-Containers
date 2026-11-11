@@ -1,8 +1,5 @@
 # Guestbook containerisation
 
-**Course:** COMS3011A Lab 2: Sustainable, Repeatable Infrastructure
-**Student:** Victor Hyginus (2849537)
-
 This site documents how the provided SvelteKit guestbook application was containerised
 and orchestrated with Docker Compose, and why each design choice was made.
 
