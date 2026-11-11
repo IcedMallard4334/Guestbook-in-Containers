@@ -1,6 +1,6 @@
 # Guestbook: Containerisation
 
-**Live documentation:** https://icedmallard4334.github.io/Guestbook-in-Containers_Lab-3_2849537/
+**Live documentation:** https://icedmallard4334.github.io/Guestbook-in-Containers
 
 ## Containerisation solution
 
@@ -13,7 +13,7 @@ docker compose up -d --build   # then open http://localhost:3000
 ```
 
 Architecture and design decisions are documented with MkDocs (source in [`docs/`](docs/index.md)); read them on the
-[live docs site](https://icedmallard4334.github.io/Guestbook-in-Containers_Lab-3_2849537/) or run `pip install mkdocs mkdocs-material && mkdocs serve`.
+[live docs site](https://icedmallard4334.github.io/Guestbook-in-Containers/) or run `pip install mkdocs mkdocs-material && mkdocs serve`.
 
 ## AI declaration
 
