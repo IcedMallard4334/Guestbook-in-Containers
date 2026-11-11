@@ -1,9 +1,8 @@
-site_name: Guestbook Containerisation (COMS3011A Lab 2)
+site_name: Guestbook Containerisation
 site_description: Architecture and design decisions for the containerised SvelteKit + PostgreSQL guestbook.
-site_author: Victor Hyginus (2849537)
-site_url: https://icedmallard4334.github.io/Guestbook-in-Containers_Lab-3_2849537/
-repo_url: https://github.com/IcedMallard4334/Guestbook-in-Containers_Lab-3_2849537
-
+site_author: Victor Hyginus
+site_url: https://icedmallard4334.github.io/Guestbook-in-Containers/
+repo_url: https://github.com/IcedMallard4334/Guestbook-in-Containers
 theme:
   name: material
   features:
